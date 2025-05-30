@@ -1,3 +1,5 @@
+// 27-05-2025
+// Author Tamima Akther Lima
 import java.util.Scanner;
 
 public class Main {
