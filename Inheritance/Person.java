@@ -1,6 +1,3 @@
-//  Inheritance
-// 17-06-2025
-// Author Tamima Akther Lima
 public class Person {
     String name;
     int age;
