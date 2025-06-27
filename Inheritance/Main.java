@@ -1,3 +1,7 @@
+//  Inheritance
+// 17-06-2025
+// Author Tamima Akther Lima
+
 public class Main {
     public static void main(String[] args) {
 //        Single Inheritance.
