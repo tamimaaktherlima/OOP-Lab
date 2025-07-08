@@ -1,57 +1,46 @@
-// 12-05-2025
-// Author Tamima Akther Lima
+// import java.sql.Array;
+// import java.util.ArrayList;
+// import java.util.List;
 
 public class Main {
-    public static void myName(){
-        System.out.println("My Name is Tamima Akther Lima");
-    }
-    public static void myName(String name){
-        System.out.println(name);
-    }
-    public static void myName(String name,int roll){
-        System.out.println("\n");
-        //System.out.println("This my Name & Roll");
-        System.out.println("Name is : "+name);
-        System.out.println("Roll is : "+roll);
-    }
-    static int calculation(int n){
-        return 5+n;
-    }
-    static int calculation(int x, int y){
-        int X = x+y;
-        return X;
-    }
-    public static void main(String[] args){
-        //int nums = {1,2,3,4,5,6,7,8,9,10}
-        //String ar = []
-        int sum = 0;
-        for(int i=1;i<=10;i++){
+    public static void main(String[] args) {
+        Calculator c1 = new Calculator();
 
-            if(i == 5 || i == 6){
-                continue;
-            }
-            if(i == 9){
-                break;
-            }
-            System.out.println(i);
+       c1.addTwoNumber(10, 60);
+//        c1.addThreeNumber(20,50,90);
+//        c1.addNumber(45.5, 27.7);
+//        c1.addString(50, "10");
+//
+//
+//        Vehicle v1 = new Vehicle();
+//
+//        Car c2 = new Car();
+//        Motorcycle m1 = new Motorcycle();
+//
+//        v1.startEngine();
+//        c2.startEngine();
+//        m1.startEngine();
 
-            sum+=i;
+
+        FireAlert f1 = new FireAlert();
+//        FireAlert f2 = new FireAlert();
+
+        SecurityAlert s1 = new SecurityAlert();
+//        SecurityAlert s2 = new SecurityAlert();
+
+
+       Alert []array = new Alert[5];
+//        for(int i = 0; i<array.length; i++){
+//            array.add(f1);
+//            array.add(s1);
+//        }
+        array[0] = f1;
+        array[1] = s1;
+        for(Alert s : array){
+//            System.out.println(s);
+            s.triggerAlert();
+            s.logAlert();
         }
-        System.out.println("Sum of the numbers is : "+sum);
-        int avg = sum/10;
-        System.out.println("Average is : "+avg);
 
-        String name = "Tamima Akther Lima";
-        int roll = 564;
-
-        myName(name);
-        myName();
-        myName(name,roll);
-        int num = calculation(25);
-        System.out.println();
-        System.out.println("The number is = "+num);
-        System.out.println();
-        int result = calculation(50,90);
-        System.out.println("Sum of x & y - "+result);
     }
 }
