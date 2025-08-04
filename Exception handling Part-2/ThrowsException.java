@@ -1,3 +1,6 @@
+// 29-07-2025
+// Author - Tamima Akther Lima
+
 public class ThrowsException {
 
     //  Throw Exception.
@@ -43,3 +46,4 @@ public class ThrowsException {
         }
     }
 }
+
